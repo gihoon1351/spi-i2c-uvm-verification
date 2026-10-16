@@ -1,2 +1,35 @@
-# spi-i2c-uvm-verification
-SPI and I2C RTL design, UVM testbenches, functional coverage, and board waveform verification.
+# SPI·I2C RTL 설계 및 UVM 검증
+
+통신 RTL의 송수신 데이터를 Scoreboard로 자동 비교하고 Directed·Random 시나리오와 기능 커버리지로 검증 범위를 확인한 프로젝트입니다.
+
+| 항목 | 내용 |
+|---|---|
+| 작성자 | 최기훈 |
+| 수행 기간 | 2026.06.11 ~ 2026.06.18 |
+| 프로젝트 형태 | 개인 프로젝트 |
+| 담당 범위 | 통신 RTL, UVM 테스트벤치, 커버리지 분석 및 보드 파형 비교 |
+| 주요 기술 | SystemVerilog · UVM 1.2 · Synopsys VCS/Verdi · SPI · I2C |
+
+## 저장소 구성
+
+| 경로 | 내용 |
+|---|---|
+| `spi/` | SPI RTL, UVM 테스트벤치와 Makefile |
+| `i2c/` | I2C RTL, UVM 테스트벤치와 Makefile |
+| `board/` | 보드 통신용 제출 RTL·테스트벤치 |
+| `docs/` | 구조·실행 안내와 원본 대응표 |
+
+## 자료 범위와 확인 상태
+
+이 저장소는 프로젝트 원본에서 RTL, 펌웨어, 테스트벤치와 필요한 설정 자료를 추려 정리한 소스 배포본입니다. 생성 캐시, 실행 바이너리, 과거 백업과 중복 BSP는 제외했습니다. 원본 소스의 로직은 변경하지 않았습니다.
+
+정리 과정에서는 파일 구성과 참조 경로를 점검했습니다. 이번 정리에서 Vivado 합성·구현, VCS 시뮬레이션, 보드 동작을 새로 실행한 것은 아닙니다. 프로젝트 수행 당시 결과와 현재 소스의 재실행 결과는 구분합니다.
+
+- [실행 및 검증 안내](docs/BUILD.md)
+- [파일 구성과 원본 대응](docs/SOURCE_MAP.csv)
+- [구조 및 주요 동작](docs/ARCHITECTURE.md)
+- [포함된 제3자 코드 안내](THIRD_PARTY.md)
+
+## 프로젝트 자료
+
+- [제출 당시 완료보고서](docs/completion-report.docx)
